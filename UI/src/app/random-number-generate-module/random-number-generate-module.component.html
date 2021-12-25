@@ -1,0 +1,95 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 mt-5"></div>
+        <div class="col-md-8 mt-5">
+            <form >
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"
+                                        disabled />
+                                    <label class="form-check-label" for="inlineCheckbox1">Numeric</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"
+                                        disabled />
+                                    <label class="form-check-label" for="inlineCheckbox2">Alphanumeric</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3"
+                                        disabled />
+                                    <label class="form-check-label" for="inlineCheckbox2">Float</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="text-align: center;">
+                                <label for="inlineFormOutputSize" style="font-size: 14px;">Size of the output file
+                                    (KB)</label>
+                                <input type="text" class="form-control form-control-sm" id="inlineFormOutputSize" name="sizeOfFile"
+                                    style="margin-top: 10px;" [(ngModel)]="sizeOfFile">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+
+                        <div class="row" style="margin-top: 20px; margin-bottom: 20px; font-size: 14px;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <button type="button" class="btn btn-outline-success form-check-inline btn-md"
+                                    style="font-size: 14px;" (click)=Start()>Start</button>
+                                <button type="button" class="btn btn-outline-danger form-check-inline btn-md"
+                                    style="font-size: 14px;">Stop</button>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 10px; margin-bottom: 10px;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4" style="padding-top: 2px;">
+                                <label for="numeric" style="font-size: 14px;">Counter 1 (Numeric)</label>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-sm" id="numeric" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4" style="padding-top: 2px;">
+                                <label for="alphanumeric" style="font-size: 14px;">Counter 2 (Alphanumeric)</label>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-sm" id="alphanumeric" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-bottom: 10px;">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-4" style="padding-top: 2px;">
+                                <label for="float" style="font-size: 14px;">Counter 3 (Float)</label>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control form-control-sm" id="float" readonly>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top: 40px;">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4" style="text-align: center;">
+                                <button type="button" class="btn btn-outline-primary w-70" (click)=navToReportPage()>Generate Report</button>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2 mt-5"></div>
+    </div>
+</div>
